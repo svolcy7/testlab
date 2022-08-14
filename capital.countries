@@ -1,0 +1,25 @@
+import requests
+
+response = requests.get("https://countriesnow.space/api/v0.1/countries/capital")
+result = response.json()
+del result['error']
+del result['msg']
+new_list = result.values()
+#m = input("please enter a country : ")
+for i in new_list:
+    for t in i:
+        
+
+
+'''while True:
+    user = input("please enter a country name that starts by the letter A: ")
+    user = user.lower()
+    if user.isalpha():
+        if user[0] != 'a':
+            print("please", user, "does not start By the letter")
+        else:
+            print("")
+
+
+    else:
+        print("Please this not a country name")'''
